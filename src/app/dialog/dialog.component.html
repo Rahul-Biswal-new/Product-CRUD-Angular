@@ -1,31 +1,63 @@
 <div class="dialog">
     <h1 mat-dialog-title>Add Product Form </h1>
     <div mat-dialog-content>
-        <p>
-            <mat-form-field appearance="outline">
+        <!-- reactive form -->
+           <form action="" [formGroup]="productForm">
+            <mat-form-field class="topitem" appearance="outline">
                 <mat-label>Product Name</mat-label>
-                <input matInput placeholder="name">
+                <input formControlName
+                ="productName" matInput placeholder="name">
             </mat-form-field>
-        </p>
-        <p>
+        
+        
             <mat-form-field appearance="outline">
                 <mat-label>Product Category</mat-label>
-                <mat-select placeholder="Category">
+                <mat-select formControlName
+                ="category" placeholder="Category">
                     <mat-option value="fruits">Fruits</mat-option>
                     <mat-option value="vegetables">Vegetables</mat-option>
                     <mat-option value="electronics">Electronics</mat-option>
                 </mat-select>
             </mat-form-field>
-        </p>
+        
 
-        <p>
+        
         <mat-form-field appearance="outline">
             <mat-label>Choose a date</mat-label>
-            <input matInput [matDatepicker]="picker">
+            <input formControlName
+            ="date" matInput [matDatepicker]="picker">
             <mat-hint>MM/DD/YYYY</mat-hint>
             <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker></mat-datepicker>
           </mat-form-field>
-        </p>
+        
+
+        <label for=""><h1>Product Freshness</h1></label>
+        <mat-radio-group formControlName
+        ="freshNess" class="example-radio-group">
+            <mat-radio-button *ngFor="let fresh of freshNessList"  [value]="fresh" class="example-radio-button">
+                    {{fresh}}
+            </mat-radio-button>
+        </mat-radio-group>
+
+
+        <mat-form-field  appearance="outline">
+            <mat-label>Price </mat-label>
+            <input matInput formControlName
+            ="price" type="number" placeholder="name">
+        </mat-form-field>
+    
+    
+        <mat-form-field  appearance="outline">
+            <mat-label>Comment</mat-label>
+            <textarea formControlName
+            ="comment" matInput ></textarea>
+        </mat-form-field>
+           </form>
+
+        <div mat-dialog-action [align]="'end'">
+            <button mat-raised-button color="warn" mat-dialog-close="">Close</button>
+            <button style="margin-left: 8px;" mat-raised-button color="primary"  (click)="addProducts()">Save</button>   
+        </div>
     </div>
 </div>

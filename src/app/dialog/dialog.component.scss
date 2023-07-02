@@ -1,3 +1,19 @@
 .dialog{
     margin-left: 100px;
+    // height: 600px;
 }
+.topitem{
+    margin-top: 10px;
+}
+
+// input{width: 1002    px;}
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+  }

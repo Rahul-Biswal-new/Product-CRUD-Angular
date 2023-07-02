@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "productName": "mobile",
+      "category": "electronics",
+      "freshNess": "BrandNew",
+      "price": 346456,
+      "comment": "this is a mobile",
+      "date": "2023-07-10T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "APPLE",
+      "category": "fruits",
+      "freshNess": "BrandNew",
+      "price": 3456,
+      "comment": "one apple a day keeps the doctor away",
+      "date": "2023-07-08T18:30:00.000Z",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
