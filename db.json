@@ -17,6 +17,24 @@
       "comment": "one apple a day keeps the doctor away",
       "date": "2023-07-08T18:30:00.000Z",
       "id": 2
+    },
+    {
+      "productName": "mango",
+      "category": "fruits",
+      "freshNess": "BrandNew",
+      "price": 34,
+      "comment": "mango fruit",
+      "date": "2023-07-02T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "mobile",
+      "category": "electronics",
+      "freshNess": "BrandNew",
+      "price": 346456,
+      "comment": "this is a mobile",
+      "date": "2023-07-10T18:30:00.000Z",
+      "id": 4
     }
   ],
   "comments": [
