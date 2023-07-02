@@ -1,19 +1,10 @@
 {
   "productList": [
     {
-      "productName": "mobile",
-      "category": "electronics",
-      "freshNess": "BrandNew",
-      "price": 346456,
-      "comment": "this is a mobile",
-      "date": "2023-07-10T18:30:00.000Z",
-      "id": 1
-    },
-    {
       "productName": "APPLE",
       "category": "fruits",
       "freshNess": "BrandNew",
-      "price": 3456,
+      "price": 56767,
       "comment": "one apple a day keeps the doctor away",
       "date": "2023-07-08T18:30:00.000Z",
       "id": 2
@@ -28,13 +19,13 @@
       "id": 3
     },
     {
-      "productName": "mobile",
-      "category": "electronics",
+      "productName": "banana",
+      "category": "fruits",
       "freshNess": "BrandNew",
-      "price": 346456,
-      "comment": "this is a mobile",
+      "price": 45,
+      "comment": "banana",
       "date": "2023-07-10T18:30:00.000Z",
-      "id": 4
+      "id": 5
     }
   ],
   "comments": [
